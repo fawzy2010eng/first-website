@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+/*    background-color: green*/
+}
+hr{
+    width: 80%
+}
+.navbar{
+    padding: 0;
+    margin: 0;
+    height: 0;
+    z-index: 1
+}
+.navbar .brand{
+    width: 30%;
+    float: left;
+    color: white;
+    margin-top: 15px;
+}
+.navbar .links{
+    width: 70%;
+    margin-top: 15px;
+}
+.navbar .links ul{
+    list-style: none;
+}
+.navbar .links ul li{
+    float: right;
+    display: inline-block;
+    margin-left: 3%;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover,.header a:hover{
+    color: #1abc9c;
+    border-bottom: solid 2px #1abc9c;
+}
+.header{
+    width: 100%;
+    height: 380px;
+    background-image: url(../img/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: 0;
+    position: relative;
+    padding: 0;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+.header #right{
+    position: fixed;
+    right: 0
+}
+.header .slider{
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-align: center
+}
+.header .img-slider{
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.services{
+    
+/*    background-color: aliceblue*/
+}
+.services .ser .unit{
+    width: 31%;
+}
+.services .ser {
+    height: 100px
+}
+.services .ser :nth-child(1),.services .ser :nth-child(2){
+    margin-right: 3.5%
+}
+.services h3{
+    margin-top: 20px;
+    width: 35%;
+}
+.services hr{
+    width: 60%;
+    border-top: 1px solid red;
+    margin-top: 0;
+    margin-bottom: 33px;
+    position: relative;
+    right: 48%
+}
+.services .unit{
+    width: 30%;
+    float: left; 
+}
+.services .unit i{
+    float: left;
+    color: #1abc9c;
+}
+.services .unit h4{
+    font-size: 11px;
+    margin-left: 36%
+}
+.services .unit p{
+    font-size: 7px;
+    margin-left: 36%
+}
+.portfolio{
+    width:100%;
+/*    background-color: beige;*/
+}
+.portfolio .para{
+    float: left;
+    width: 30%;
+    margin-right: 10%;
+    display: inline-block
+}
+.portfolio .para h3{
+    font-size: 13px
+}
+.portfolio hr{
+    width: 75%;
+    border-top: 1px solid red;
+    margin-top: 0;
+    margin-bottom: 12px;
+    position: relative;
+    right: 48%
+}
+.portfolio .para p{
+    font-size: 9px;
+    line-height: 1.3
+}
+.portfolio .gallery{
+    margin-top: 10%;
+    text-align: right;
+}
+.portfolio .gallery .img{
+    max-width: 14%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.portfolio .gallery .img img{
+    width: 100%;
+    background-size: cover;
+}
+.middle {
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.gallery .img:hover img {
+  opacity: 0.3;
+}
+
+.gallery .img:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #1abc9c;
+  color: white;
+  font-size: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.testimonials{
+    background-image: url(../img/04.jpg);
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+.testimonials .t-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0,.5);
+}
+.testimonials .t-overlay .slider{
+    padding-top: 10%;
+    color: white
+}
+.testimonials h4{
+    margin-bottom: 7%;
+    font-size: bold;
+    text-transform: capitalize
+}
+.testimonials p{
+    margin-bottom: 7%;
+}
+.testimonials .t-overlay .slider span{
+    color: rgba(23, 239, 196, 1)
+}
+.testimonials .t-overlay .slider div{
+    display: none
+}
+.testimonials .t-overlay .slider .active{
+    display: block
+}
+.projects{
+/*    background-color: aliceblue*/
+}
+.projects hr{
+    width: 44%;
+    border-top: 1px solid red;
+    margin-top: 0;
+    margin-bottom: 33px;
+    position: relative;
+    right: 48%
+}
+.projects ul{
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    height: 30px;
+    margin-bottom: 30px
+}
+.projects ul button{
+    float: left;
+    margin-right: 3%;
+    color: white;
+    background-color: lightgray;
+    border: 2px solid #D4CCCC;
+    padding: 0 6px;
+}
+.projects ul button:focus{
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+    outline: 0;
+    color: #FFF
+}
+.projects .row{
+    margin-bottom: 30px;
+}
+.projects .row >div{
+    width: 32.666%;
+    background-color: green;
+    position: relative
+}
+.projects .row >div:nth-child(2){
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.projects .row img{
+    width: 100%;
+    height: 100%;
+}
+.projects .over{
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(26,188,156,.7);    
+    display: none;
+    text-align: center;
+}
+.projects .over h5{
+    height: 100%;
+    width: 100%;
+    color: white;
+    line-height: 232px;
+}
+,projects .over span{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.projects .over i{
+    position: absolute;
+    bottom: 20px;
+    right: 33px;
+    color: #FFF;
+}
+.projects .over h4{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #FFF;
+    font-size: 12px;
+}
+.projects .row >div:hover .over{
+    display: block
+}
+.footer{
+    background-color: #232323;
+    width: 100%;
+    padding-top: 22px;
+    color: white;
+    text-align:left
+}
+.footer .container >div{
+    width: 25%;
+    float: left
+}
+.footer h3{
+    font-size: 15px;
+    font-weight: bold    
+}
+.footer .about-classic p{
+    font-size: 10px;
+    color: #6C6C6C;
+}
+.footer  .about-classic .is{
+    margin-bottom: 33%;
+}
+.footer  .about-classic i{
+    border:1px solid #979797;
+    color: #6C6C6C;
+}
+.footer  .about-classic span{
+    font-size: 12px;
+}
+.footer  .Tags h6{
+    float: left;
+    margin-right: 2%;
+    widows: 20%;
+    padding: 4px;
+    font-size: 10px;
+    border: 2px solid #6c6c6c;
+}
+.footer .recent .single{
+    width: 100%;
+}
+.footer .recent .single .img{
+    width: 20%;
+    float: left;
+    margin-right: 12px;
+}
+.footer .recent .single .img img{
+    width: 100%;
+    height: 100%;
+}
+.footer .recent .single .txt{
+    width: 80%;
+    padding-left: 30%
+}
+.footer .recent .single .txt h5{
+    font-size: 12px;
+}
+.footer .recent .single .txt h6{
+    font-size: 8px;
+    color: #6c6c6c;
+}
+
+.footer .categories h4{
+    font-size: 10px;
+    widows: 100%;
+    color: #6c6c6c;
+    border-bottom: 2px solid #6c6c6c;
+    height: 22px;
+    padding-left: 8px;
+}
