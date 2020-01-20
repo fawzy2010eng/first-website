@@ -1,0 +1,486 @@
+body{
+    padding: 0;
+    margin: 0;
+    position: relative
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+/*    overflow: hidden;*/
+/*    padding: 0;*/
+/*    background-color: green*/
+}
+*{
+    padding: 0
+}
+.header{
+    position: relative;
+    text-align: center
+}
+.header .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);    
+}
+.header .navbar{
+    height: 0;
+    color: white;
+}
+.header .navbar .brand h3{
+    font-weight: bold;
+    font-size: 12px;
+}
+.header .navbar .brand span{
+    color: #f7600e
+}
+.header .menu{
+    width: 20%
+}
+.header .menu h4{
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 5%;
+}
+.header .welcome{
+    position: absolute;
+    top: 30%;
+    width: 60%;
+    left: 20%;
+    color: white;
+}
+.header .welcome h3{
+    font-weight: bold;
+}
+.header .welcome span{
+    color:#f7600e
+}
+.header .welcome p{
+    margin-bottom: 22px
+}
+.header .welcome .btns{
+    margin-bottom: 15%
+}
+.header .welcome button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 30px;
+}
+.header .welcome button:hover{
+    background-color: #f7600e;
+    border: 1px solid #f7600e;
+    transition: all .5s ease-in-out;    
+}
+.header  a{
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    bottom: 5%
+}
+.header .img{
+    height: 400px;
+}
+.header .img img{
+    height: 100%;
+    width: 100%;
+}
+.branches .branch{
+    padding-top: 35px;
+    text-align: center;
+    width: 21.25%;
+    float: left
+}
+.branches .branch:nth-child(1),.branches .branch:nth-child(2),.branches .branch:nth-child(3){
+    margin-right: 5%
+}
+
+.branches .branch i{
+    color: #f7600e;
+    border: 2px solid #bfbaba;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 8px; 
+}
+.branches .branch i:hover{
+    background-color: #f7600e;
+    border-color: #f7600e;
+    color: white;
+    transition: all .5s ease-in-out
+}
+.branches .branch h3{
+    font-size: 12px;;
+}
+.branches .branch p{
+    font-size: 7px;
+        color:#bfbaba
+}
+.subscribe{
+    text-align: center;
+    margin-bottom: 200px
+}
+.subscribe .img{
+    height: 150px;
+}
+.subscribe .img img{
+    height: 100%;
+    width: 100%;
+}
+.subscribe .container{
+    position: relative;
+}
+.subscribe .container .txt{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 260px;
+    margin: auto;
+    background-color: green
+}
+.subscribe .container input{
+    width: 320px;
+    padding: 5px;
+    border-radius: 12px;
+    margin-right: 5%;
+}
+.subscribe .container button{
+    padding: 7PX 40px ;
+    border-radius: 12px;
+    background-color: #f7600e;
+    color: white;
+    border: none    
+}
+.subscribe .container button:hover{
+    color: #f7600e;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
+.projects{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.projects span{
+    color: #f7600e;
+}
+.projects .row{
+    margin-bottom: 9px;
+}
+.projects .row >div{
+    width: 32.666%;
+    position: relative
+}
+.projects .row >div:nth-child(2){
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.projects .row img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.projects .over{
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(247,96,14,.7);    
+    display: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 12px
+}
+.projects .over h5{
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.projects .over p{
+    font-size: 9px;
+    margin-top: 12px;
+}
+.projects .over button{
+    background-color: transparent;
+    border-radius: 7px;
+    border: none;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.projects .over button:hover{
+    background-color: white;
+    color: #f7600e;
+    border-radius: 7px;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+.projects .row >div:hover .over{
+    display: block
+}
+.projects .container>button{
+    background-color: transparent;
+    color: #afa8a8;
+    border-radius: 7px;
+    border: 2px solid #efe6e6;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+.projects .container>button:hover{
+    background-color: #f7600e;
+    color: white;
+    border: 2px solid #f7600e;
+    transition: all .5s ease-in-out;
+}
+
+.testimonial{
+    text-align: center;
+    position: relative
+}
+.testimonial i:nth-child(1){
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    z-index: 1;
+    display: none;
+}
+.testimonial i:nth-child(3){
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+}
+.testimonial i:hover{
+    color: #f7600e
+}
+.testimonial .container .over .testim{
+    display: none
+}
+.testimonial .container .over .testim:nth-child(1){
+    display: block
+}
+.testimonial .over .img img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+.testimonial .over{
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(105,105,105,.7);    
+/*    display: none;*/
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+.testimonial .over .txt{
+    position: relative;
+    bottom: 150px;
+    color: #efe6e6
+}
+.testimonial .img{
+    height: 300px
+}
+.testimonial  .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.ourteam{
+    padding-top: 30px;
+    text-align: center;
+}
+.ourteam .txt h3{
+    font-size: 2em;
+}
+.ourteam .txt span{
+    color: #f7600e
+}
+.ourteam p{
+    color: #212529;
+}
+.ourteam .team{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px
+}
+.team .member {
+    width: 22%;
+    float: left;
+    color: #ccccb3;
+}
+.team .member:nth-child(1),.team .member:nth-child(2),
+.team .member:nth-child(3) {
+    margin-right: 4%
+}
+.team .member .img{
+    height: 200px;
+    margin-bottom: 18px
+}
+.team .member .img img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+}
+.team .member h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+.team .member .is .fa-facebook{
+    border-radius: 50%;
+}
+.team .member p{
+    font-size: 10px;
+    width: 80%;
+    margin: auto
+}
+.team .member:hover .img img{
+    filter: grayscale(0)
+}
+.team .member:hover h4{
+    color: black
+}
+.team .member:hover p{
+    color: 	black;	
+}
+.team .member:hover .fa-facebook{
+    color:   #002080
+}
+.team .member:hover .fa-twitter-square{
+    color:   #339cff
+}
+.team .member:hover .fa-google-plus-square{
+    color:   #ff4d4d
+}
+.hello{
+    text-align: center;
+    position: relative;
+}
+.hello .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.2);    
+}
+.hello .img{
+    height: 317px;
+}
+.hello .img img{
+    height: 100%;
+    width: 100%;
+}
+.hello .container{
+    position: relative;
+}
+.hello .container .txt{
+    padding-top: 2%;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+.hello .txt h3{
+    font-size: 2em;
+}
+.hello .txt span{
+    color: #f7600e
+}
+.hello .txt p{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.hello .txt input:nth-child(3){
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+
+.hello .txt input:nth-child(4){
+    width: 45%;
+    float: right;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+
+.hello .txt input:nth-child(5){
+    width: 100%;
+    height: 70px;
+    border-radius: 7px;
+    padding-left: 7px;
+    margin-bottom: 15px;
+    vertical-align: text-top
+}
+.hello .container button{
+    padding: 3PX 20px ;
+    border-radius: 7px;
+    background-color: #f7600e;
+    color: white;
+    float: left;
+    border: none    
+}
+.hello .container button:hover{
+    color: #f7600e;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
+.hello .is {
+    float: right;
+}
+
+.hello .is .fa-facebook{
+    color:   #002080
+}
+.hello .is .fa-twitter-square{
+    color:   #339cff;
+}
+.hello .is .fa-google-plus-square{
+    color:   #ff4d4d
+}
+.copyrights {
+    background-color: #3b434c;
+    color: #FFF;
+    overflow: hidden;
+    padding: 12px 0
+}
+
+.copyrights .copyright {
+    float: left
+}
+
+.copyrights .design {
+    float: right
+}
